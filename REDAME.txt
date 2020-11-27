@@ -1,0 +1,12 @@
+Psuedo code for Rock,Paper Scisisors (Psuedocode for more complex steps to come)
+
+1 Prompt user to enter the text rock,paper or scissors
+2 Accept user input
+3 Use reg expression on user input
+4 is  input rock,paper or scissors?
+	4.1 TRUE:Computer Selects its own move randomly
+	    4.1.1 Compare user input to computer's choice
+	    4.1.2 Did the computer win?
+		4.1.2.1 TRUE:Print a message telling the user they lost,x beats why
+		4.1.2.2 FALSE:Print a message telling the user they won
+	4.2 False: Print a message telling the user they entered the text worng, goto Step 1
