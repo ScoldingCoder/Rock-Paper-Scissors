@@ -1,31 +1,25 @@
 Psuedo code for Rock,Paper Scisisors (Psuedocode for more complex steps to come)
 
-1 Prompt user to enter the text rock,paper or scissors
+1 Prompt user to enter the text rock,paper or scissors via buttons
 2 Accept user input
-3 Use reg expression on user input/convert to all common
-4 is  input rock,paper or scissors?
-	4.1 TRUE:Computer Selects its own move randomly
-	    4.1.1 Compare user input to computer's choice
-	    4.1.2 Did the computer win?
-		4.1.2.1 TRUE:Print a message telling the user they lost,x beats y
-		4.1.2.2 FALSE:Print a message telling the user they won
-	4.2 False: Print a message telling the user they entered the text worng, goto Step 1
+3 Computer Selects its own move randomly
+4 Compare user input to computer's choice
+5 Did the computer win?
+	5.1 TRUE:Print a message telling the user they lost,x beats y
+	5.2 FALSE:Print a message telling the user they won
+	
 
 
-Function for Steps 1 to 4 and 4.2 > playerSelection:
-Inputs:None
-Returns: The player's option
+Function for Steps 1 and 2  > playerSelection:
+Inputs:Button Press
+Returns: The player's option 
 
 Prompt User for input rock, paper or scissors
 Accept user input
-Ensure that all the text is common
-Check the validity of the input (ie is input rock,paper or scissiors)
-If the input is valid, return the user input
-If the input is invalid, Tell user they made an error and re prompt the user until valid
 
 
-Function for step 4.1 > computerSelection:
-Inputs:None
+Function for step 3 > computerSelection:
+Inputs:Button Press
 Returns: The Computers's option
 
 Generate a random number between 0 and 2
@@ -34,7 +28,7 @@ if the number is 1 ,return scissors
 if the number is 2, return rock
 
 
-Function for steps 4.1.1 to 4.1.2.2 > playRound
+Function for steps 4 to 5.1/5.2 > playRound
 Inputs:the Computers's option , The player's option
 Returns: The result of the round
 
