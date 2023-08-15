@@ -12,7 +12,11 @@ buttons.forEach((button) => {
 
   // and for each one we add a 'click' listener
   button.addEventListener('click', () => {
-  result= game(button.id);
+  result= game(button.id); //Plays round when player clicks on rock,paper or scissors
+
+/* Checks for winner of each round, gives points to winner,
+repeats game round until player or computer wins five rounds
+*/
   checkResultW = result.search("Won")
   checkResultL = result.search("Lose")
 
@@ -152,7 +156,10 @@ if (Computer == "scissors") {
 
 }
 	
-
+/*Function :game
+Inputs:The player's option
+Generates Computer's Option, Compares to player's option
+Returns: The result of the round*/
 function game(playerChoice){
 userSelect =playerChoice;
 computerSelect = computerPlay();
