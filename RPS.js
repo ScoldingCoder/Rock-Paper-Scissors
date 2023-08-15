@@ -61,7 +61,7 @@ function getRandomInt(max) {
 Inputs:None
 Returns: The Computers's option */
 function computerPlay(){
-//Generate a random number between 1 and 3
+//Generate a random number between 0 and 2
 randomInt = getRandomInt(3);
 //if the number is 0, return paper ,if the number is 1 ,return scissors ,if the number is 2, return rock
 
